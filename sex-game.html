@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfect evening</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    .container {
+      background-color: #83746e;
+      width: 350px;
+      height: 350px;
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 20px;
+    }
+.whole {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: none;
+  padding: 10px;
+  background-color: #fdfaf0;
+  color: #464544;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;;
+}
+h1 {
+  margin-top: 0;
+  color: #fdfaf0;
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Perfect evening!</h1>
+    <div class="whole">
+    <button onclick="teaseMe()">What should I kiss?</button>
+    <button onclick="teaseMe()">What shoud I lick?</button>
+    <button onclick="sexType()">Which kind of sex should we have?</button>
+  </div>
+</div>
+
+  <script>
+    function teaseMe() {
+    const number = Math.random();
+      if (number <= 0.1) {alert(`Lips!`)}
+      else if (number >=0.2 && number <=0.3) {alert(`Thigs!`)}
+      else if (number >=0.4 && number <=0.5) {alert(`Toes!`)}
+      else if (number >=0.6 && number <=0.7) {alert(`Vagina or Penis!`)}
+      else if (number >=0.8 && number <=0.9) {alert(`Boobies!`)}
+      else {alert(`:)`)}
+    }
+
+    function sexType() {
+      const number = Math.random();
+      if (number <= 0.1) {alert(`Oral!`)}
+      else if (number >=0.2 && number <=0.9) {alert(`Vaginal!`)}
+      else {alert(`Anal`)}
+    }
+  </script>
+</body>
+
+</html>
