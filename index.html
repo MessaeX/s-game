@@ -50,14 +50,14 @@ h1 {
   <div class="container">
     <h1>Perfect evening!</h1>
     <div class="whole">
-    <button onclick="teaseMe()">What should I kiss?</button>
-    <button onclick="teaseMe()">What shoud I lick?</button>
-    <button onclick="sexType()">Which kind of sex should we have?</button>
+    <button onclick="functionK()">What should I kiss?</button>
+    <button onclick="functionK()">What shoud I lick?</button>
+    <button onclick="functionS()">Which kind of sex should we have?</button>
   </div>
 </div>
 
   <script>
-    function teaseMe() {
+   /*function teaseMe() {
     const number = Math.random();
       if (number <= 0.1) {alert(`Lips!`)}
       else if (number >=0.2 && number <=0.3) {alert(`Thigs!`)}
@@ -73,6 +73,37 @@ h1 {
       else if (number >=0.2 && number <=0.9) {alert(`Vaginal!`)}
       else {alert(`Anal`)}
     }
+
+    let kissCollection = [
+      `Lips`, `Neck`, `Ears`, `Nipples`, `Belly`, `Vagina/Penis`, `Hips`, `Toes`
+    ]
+    console.log(typeof kissCollection)
+    console.log(kissCollection)
+    console.log(random)
+    function randomItem(item) {
+      item
+    }*/
+function functionK() {
+        function randomKiss(kissCollection) {
+        return kissCollection[Math.floor(Math.random() * kissCollection.length)];
+      }
+    const kissCollection = [
+          `Lips`, `Neck`, `Ears`, `Nipples`, `Belly`, `Vagina/Penis`, `Hips`, `Toes`
+        ]
+    const randomElement = randomKiss(kissCollection);
+    alert(randomElement)
+}
+
+function functionS() {
+    function randomSex(sexCollection) {
+      return sexCollection[Math.floor(Math.random() * sexCollection.length)]
+    }
+    const sexCollection = [
+      `Oral`, `Anal`, `Vaginal`, `Vaginal`, `Vaginal`, `Vaginal`, `Vaginal`, `Vaginal`, `Vaginal`, `Vaginal`, 
+    ]
+    const randomElement = randomSex(sexCollection)
+    alert(randomElement)
+}
   </script>
 </body>
 
