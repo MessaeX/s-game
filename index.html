@@ -53,6 +53,7 @@ h1 {
     <button onclick="functionK()">What should I kiss?</button>
     <button onclick="functionK()">What shoud I lick?</button>
     <button onclick="functionS()">Which kind of sex should we have?</button>
+    <button onclick="functionSP()">In which pose?</button>
   </div>
 </div>
 
@@ -102,6 +103,16 @@ function functionS() {
       `Oral`, `Anal`, `Vaginal`, `Vaginal`, `Vaginal`, `Vaginal`, `Vaginal`, `Vaginal`, `Vaginal`, `Vaginal`, 
     ]
     const randomElement = randomSex(sexCollection)
+    alert(randomElement)
+}
+function functionSP() {
+    function randomSexPose(sexCollection) {
+      return sexCollection[Math.floor(Math.random() * sexCollection.length)]
+    }
+    const sexCollection = [
+      `69`, `Cowgirl`, `Cowgirl Reverse`, `Missionary`, `Doggy`, `Legs Up`, `Standing Up`, `Mountain pose`, `The Squat`, `Spoons`, `Planking`, `With Pillows`, `Chair`
+    ]
+    const randomElement = randomSexPose(sexCollection)
     alert(randomElement)
 }
   </script>
